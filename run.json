@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Kuwait Marathon",
+        "image": "https://i.imgur.com/jlEjz4bm.png",
+        "distance": "26.2 miles",
+        "location": "Camp Arifjan, KU",
+        "difficulty": "Moderate",
+        "name": "Will Pratt"
+    },
+    {
+        "title": "Mark Twain 100 Miler",
+        "image": "https://i.imgur.com/LmhmhMTm.jpg",
+        "distance": "100 miles",
+        "location": "Berryman, MO",
+        "difficulty": "Very Challenging",
+        "name": "Will Pratt"
+    }
+]
