@@ -1,0 +1,72 @@
+[
+    {"title": "Rancho San Antonio Park",
+    "image": "https://i.imgur.com/j7CQu7km.jpg",
+    "distance": "8 miles",
+    "location": "Mountain View, CA",
+    "name": "Will Pratt"},
+
+    {"title": "Cliff Walk",
+    "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi1.wp.com%2Fthenewportblast.com%2Fwp-content%2Fuploads%2F2016%2F02%2Fcliff-walk-video-feature.jpg%3Fresize%3D620%252C376&f=1&nofb=1",
+    "distance": "3.5 miles",
+    "location": "Newport, RI",
+    "name": "Katherine Gomez"},
+
+    {"title": "Tidal Basin",
+    "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwashington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fgeneric_hero_banner_1440_x_600%2Fpublic%2Fsunrise_at_tidal_basin_9E20B787-D658-4D41-96C2F6A787CCB407_8b671349-a20b-4c50-806e82274b574c6e.jpg%3Fh%3Df1e1c65e%26itok%3D7Ap59ak_&f=1&nofb=1",
+    "distance": "1.5 miles",
+    "location": "Washington, D.C.",
+    "name": "Katherine Gomez"},
+    
+    {"title": "Jeff Friend Trail",
+    "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flive.staticflickr.com%2F688%2F21559073043_b514b6c000_b.jpg&f=1&nofb=1",
+    "distance": "1 mile",
+    "location": "Gulf, CA",
+    "name": "Katherine Gomez"},
+
+    {"title": "Nugget Falls Trail",
+    "image": "https://cdn-assets.alltrails.com/uploads/photo/image/20850180/extra_large_d2d77cd87f9a97e54b6319386ca6d223.jpg",
+    "distance": "0.8 miles",
+    "location": "Juneau, AK",
+    "name": "Katherine Gomez"},
+
+    {"title": "Hieroglypic Trail",
+    "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs3-media1.fl.yelpcdn.com%2Fbphoto%2FN9ihkwNwRn7r-NL1pkKi3g%2Fo.jpg&f=1&nofb=1",
+    "distance": "2.9 miles",
+    "location": "Gold Canyon, AZ",
+    "name": "Katherine Gomez"},
+
+    {"title": "Juniper Springs Recreation Area Trail",
+    "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia-cdn.tripadvisor.com%2Fmedia%2Fphoto-s%2F03%2F22%2Ffa%2Fa9%2Fjuniper-springs-recreation.jpg&f=1&nofb=1",
+    "distance": "1.4 miles",
+    "location": "Ocala, FL",
+    "name": "Katherine Gomez"},
+
+    {"title": "Desoto Falls Trail",
+    "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthedyrt.imgix.net%2Fphoto%2F48532%2Fphoto%2Fdesoto-falls_f664c8c1da379552217fc43201ce3b21.jpg%3Fauto%3Dformat%26fit%3Dcrop%26ar%3D1%3A1%26ixlib%3Dember-1.0.16&f=1&nofb=1",
+    "distance": "1.4 miles",
+    "location": "Helen, GA",
+    "name": "Katherine Gomez"},
+
+    {"title": "Indiana Dunes State Park Loop",
+    "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.m-34n0wTo1khneXKsxTC3gHaE8%26pid%3DApi&f=1",
+    "distance": "1.8 miles",
+    "location": "Porter, IN",
+    "name": "Katherine Gomez"},
+
+    {"title": "High Trestle Trail",
+    "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.MI6xOtu2hywBhtkX7rKy2gHaEK%26pid%3DApi&f=1",
+    "distance": "24.8 miles",
+    "location": "Ankeny, IA",
+    "name": "Katherine Gomez"},
+
+    {"title": "Monocacy National Battlefield Trails",
+    "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.explicit.bing.net%2Fth%3Fid%3DOIP.DuNJ_N9fJxZOPe4EIhWPEQHaEw%26pid%3DApi&f=1",
+    "distance": "7.4 miles",
+    "location": "Ankeny, IA",
+    "name": "Katherine Gomez"}
+
+]
+        
+
+     
+
