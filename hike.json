@@ -6,5 +6,95 @@
         "location": "San Francisco, CA",
         "difficulty": "Easy",
         "name": "Will Pratt"
+    },
+
+    {
+        "title": "Tonto Trail",
+        "image": "https://www.thebrokebackpacker.com/wp-content/uploads/2018/06/IMG_3386-690x517.jpg",
+        "distance": "70 miles",
+        "location": "Grand Canyon National Park, AZ",
+        "difficulty": "Medium",
+        "name": "Katherine Gomez"
+    },
+
+    {
+        "title": "The Wave",
+        "image": "https://www.thebrokebackpacker.com/wp-content/uploads/2018/10/The-Wave-Arizona-690x460.jpg",
+        "distance": "5.2 miles",
+        "location": "Kanab, AZ",
+        "difficulty": "Easy",
+        "name": "Katherine Gomez"
+    },
+
+    {
+        "title": "Cracker Lake",
+        "image": "https://www.thebrokebackpacker.com/wp-content/uploads/2018/10/cracker_lake_glacier_national_park_montana_mountains_landscape_scenic_snow_valley-794532-690x459.jpg",
+        "distance": "12.6 miles",
+        "location": "Glacier National Park, MT",
+        "difficulty": "Medium",
+        "name": "Katherine Gomez"
+    },
+
+    {
+        "title": "Kesugi Ridge Trail",
+        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.z8-LcAqtOO6dxtiSf3ZwcwHaE8%26pid%3DApi&f=1",
+        "distance": "36.2 miles",
+        "location": "Denali State Park, AK",
+        "difficulty": "Easy",
+        "name": "Katherine Gomez"
+    },
+
+    {
+        "title": "Mount Adams South Climb",
+        "image": "https://www.thebrokebackpacker.com/wp-content/uploads/2018/10/800px-Mount_Adams_summit_area.jpg",
+        "distance": "11.2 miles",
+        "location": "Trout Lake, WA",
+        "difficulty": "Hard",
+        "name": "Katherine Gomez"
+    },
+
+    {
+        "title": "Red River Gorge Loop",
+        "image": "https://www.thebrokebackpacker.com/wp-content/uploads/2018/10/800px-Red_River_Gorge_-_Motherlode_1-690x462.jpg",
+        "distance": "36.0 miles",
+        "location": "Slade, KY",
+        "difficulty": "Medium",
+        "name": "Katherine Gomez"
+    },
+
+    {
+        "title": "The Long Trail",
+        "image": "https://www.thebrokebackpacker.com/wp-content/uploads/2018/10/800px-thumbnail-690x518.jpg",
+        "distance": "36.0 miles",
+        "location": "Williamstown, VT",
+        "difficulty": "Hard",
+        "name": "Katherine Gomez"
+    },
+
+    {
+        "title": "Mt. Washington Summit via Tuckerman's Ravine",
+        "image": "https://www.thebrokebackpacker.com/wp-content/uploads/2018/10/800px-Boott_Spur_above_Tucks-690x518.jpg",
+        "distance": "8.4 miles",
+        "location": "Gorham, NH",
+        "difficulty": "Hard",
+        "name": "Katherine Gomez"
+    },
+
+    {
+        "title": "Appalachian Trail",
+        "image": "https://cdn.elebase.io/dbcc75a2-4b9f-4a0e-8e4b-cfa273624e10/ef009baa-f049-4057-8485-68620a48d631-vtm80341f748791eef88.jpg?i=true&q=85",
+        "distance": "8.4 miles",
+        "location": "Georgia, ME",
+        "difficulty": "Hard",
+        "name": "Katherine Gomez"
+    },
+
+    {
+        "title": "Barton Creek Greenbelt",
+        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffreefuninaustin.com%2Fwp-content%2Fuploads%2Fsites%2F44%2F2015%2F07%2FScreen-Shot-2015-07-13-at-9.51.08-PM.png&f=1&nofb=1",
+        "distance": "7.2 miles",
+        "location": "Austin, TX",
+        "difficulty": "Medium",
+        "name": "Katherine Gomez"
     }
 ]
