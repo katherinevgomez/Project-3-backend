@@ -7,6 +7,7 @@
         "difficulty": "Moderate",
         "name": "Will Pratt"
     },
+
     {
         "title": "Mark Twain 100 Miler",
         "image": "https://i.imgur.com/LmhmhMTm.jpg",
@@ -14,5 +15,106 @@
         "location": "Berryman, MO",
         "difficulty": "Very Challenging",
         "name": "Will Pratt"
+    },
+
+    {
+        "title": "Hudson River Waterfront Walkway",
+        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffarm1.staticflickr.com%2F338%2F33107084521_58e99671e5_b.jpg&f=1&nofb=1",
+        "distance": "18.5 miles",
+        "location": "Bayonne, NJ",
+        "difficulty": "Easy Peasy",
+        "name": "Katherine Gomez"
+    },
+
+    {
+        "title": "Copper Ridge Loop",
+        "image": "https://www.outsideonline.com/sites/default/files/styles/img_850-width_flex-height/public/2019/03/15/cascades-trail-washington_h.jpg?itok=Kmgb7Cfu",
+        "distance": "34.0 miles",
+        "location": "North Cascades National Park, WA",
+        "difficulty": "Middle Ground",
+        "name": "Katherine Gomez"
+    },
+
+    {
+        "title": "Tahoe Rim Trail",
+        "image": "https://www.outsideonline.com/sites/default/files/styles/img_850-width_flex-height/public/2019/03/15/emeraldbay-tahoe-trail_h.jpg?itok=55jN2hJu",
+        "distance": "170.0 miles",
+        "location": "Tahoe City, CA",
+        "difficulty": "Middle Ground",
+        "name": "Katherine Gomez"
+    },
+
+    {
+        "title": "Zion Traverse",
+        "image": "https://www.outsideonline.com/sites/default/files/styles/img_850-width_flex-height/public/2019/03/19/zion-park-trail_h.jpg?itok=ogzqpgOA",
+        "distance": "48.8 miles",
+        "location": "Zion National Park, UT",
+        "difficulty": "Very Challenging",
+        "name": "Katherine Gomez"
+    },
+
+    {
+        "title": "Four Pass Loop",
+        "image": "https://www.outsideonline.com/sites/default/files/styles/img_850-width_flex-height/public/2019/03/15/fourpass-loop-colorado_h.jpg?itok=NXyRDiTK",
+        "distance": "28.0 miles",
+        "location": "Aspen, CO",
+        "difficulty": "Middle Ground",
+        "name": "Katherine Gomez"
+    },
+
+    {
+        "title": "Potomac River",
+        "image": "https://www.outsideonline.com/sites/default/files/styles/img_850-width_flex-height/public/2019/03/15/potomac-nationalall-trail_h.jpg?itok=0bpcnz-J",
+        "distance": "28.0 miles",
+        "location": "Washington, D.C.",
+        "difficulty": "Easy Peasy",
+        "name": "Katherine Gomez"
+    },
+
+    {
+        "title": "Charles River Path",
+        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.l-3ao734-Lz2oheU6VvJZAHaF7%26pid%3DApi&f=1",
+        "distance": "8.0 miles",
+        "location": "Boston, MA",
+        "difficulty": "Easy Peasy",
+        "name": "Katherine Gomez"
+    },
+
+    {
+        "title": "Teston Crest Trail",
+        "image": "https://www.outsideonline.com/sites/default/files/styles/img_850-width_flex-height/public/2019/03/15/tetons-crest-trail1_h.jpg?itok=UCY0NbsZ",
+        "distance": "39.0 miles",
+        "location": "Jackson, WY",
+        "difficulty": "Easy Peasy",
+        "name": "Katherine Gomez"
+    },
+
+    {
+        "title": "Elliot Bay Trail",
+        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.TxaTK3BLyeUHdu6-QJCnkwHaE8%26pid%3DApi&f=1",
+        "distance": "7.0 miles",
+        "location": "Seattle, WA",
+        "difficulty": "Easy Peasy",
+        "name": "Katherine Gomez"
+    },
+
+    {
+        "title": "Papago Park",
+        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.0g3R_BEjZKBB8coOa2_lOQHaE8%26pid%3DApi&f=1",
+        "distance": "3.1 miles",
+        "location": "Phoenix, AZ",
+        "difficulty": "Middle Ground",
+        "name": "Katherine Gomez"
+    },
+
+    {
+        "title": "Miami Beach South to Mid Beach",
+        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.BgmBZAYhvFEXq9Fr3GpZIQHaFj%26pid%3DApi&f=1",
+        "distance": "1.5 miles",
+        "location": "Miami, FL",
+        "difficulty": "Easy Peasy",
+        "name": "Katherine Gomez"
     }
+
+    
 ]
