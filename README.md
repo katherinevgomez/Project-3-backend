@@ -1,5 +1,14 @@
 # SEIR Project-3
 
+23MAY21
+Author: PRATT, WILLIAM A.
+Task: ADD AUTH
+Notes:  I added to the server.js file
+
+
+***Nothing Follows***
+
+
 ## Contributors
 
 -   Katherine Gomez

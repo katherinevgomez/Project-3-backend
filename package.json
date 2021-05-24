@@ -15,7 +15,9 @@
     "dotenv": "^9.0.2",
     "express": "^4.17.1",
     "mongoose": "^5.12.10",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "node": "^16.1.0",
+    "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"

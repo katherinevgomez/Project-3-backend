@@ -6,6 +6,15 @@ const mongoose = require("mongoose")
 const cors = require("cors")
 const morgan = require("morgan")
 
+// Added the following (lines 10-16)
+app.use(cors());
+
+app.use('/login', (req, res) => {
+  res.send({
+    token: 'test123'
+  });
+});
+
 const run = require("./run.json");
 const hike = require("./hike.json");
 const scenic = require("./scenic.json");
