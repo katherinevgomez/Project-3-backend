@@ -1,19 +1,28 @@
 require("dotenv").config()
-const { PORT = 3000, MONGODB_URL } = process.env
+const { PORT = 8080, MONGODB_URL } = process.env
 const express = require("express")
 const app = express()
-const mongoose = require("mongoose")
+// const mongoose = require("mongoose")
 const cors = require("cors")
 const morgan = require("morgan")
+const mongoose = require("./db/db");
+const AuthRouter = require("./controllers/user");
+const auth = require("./auth");
+const NoteRouter = require("./controllers/notes");
 
-// Added the following (lines 10-16)
 app.use(cors());
+app.use(express.json());
+app.use(morgan("tiny"));
+// app.use(morgan("dev"));
 
-app.use('/login', (req, res) => {
-  res.send({
-    token: 'test123'
-  });
+app.get("/", auth, (req, res) => {
+    res.json(req.payload);
+    res.send("Airborne!")
 });
+
+app.use("/auth", AuthRouter)
+
+app.use("/note", NoteRouter)
 
 const run = require("./run.json");
 const hike = require("./hike.json");
@@ -24,10 +33,11 @@ mongoose.connect(MONGODB_URL, {
     useNewUrlParser: true
 })
 
-mongoose.connection
-.on("open", () => console.log("Green Light GO!"))
-.on("close", () => console.log("Red Light NOGO"))
-.on("error", (error) => console.log(error))
+// Used to be db/connection
+// mongoose.connection
+// .on("open", () => console.log("Green Light GO!"))
+// .on("close", () => console.log("Red Light NOGO"))
+// .on("error", (error) => console.log(error))
 
 // models
 const RunSchema = new mongoose.Schema({
@@ -62,14 +72,8 @@ const Hike = mongoose.model("Hike", HikeSchema)
 
 const Scenic = mongoose.model("Scenic", ScenicSchema)
 
-// middleware
-app.use(cors());
-app.use(morgan("dev"));
-app.use(express.json());
 
-app.get("/", (req, res) => {
-    res.send("Airborne!")
-});
+// middleware
 
 //////////////////////////////////////////////////////////////////////////
 
