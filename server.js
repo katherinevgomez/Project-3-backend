@@ -129,7 +129,6 @@ app.get('/scenic', async (req, res) => {
 
 // create run route
 app.post('/run', auth, async (req, res) => {
-    console.log('username: ', req.payload.username);
     try {
         const newRun = await Run.create(req.body);
         await associateWithUser({
@@ -174,7 +173,7 @@ app.post('/scenic', auth, async (req, res) => {
 });
 
 // run update route
-app.put('/run/:id', async (req, res) => {
+app.put('/run/:id', auth, async (req, res) => {
     try {
         res.json(
             await Run.findByIdAndUpdate(req.params.id, req.body, { new: true })
@@ -185,7 +184,7 @@ app.put('/run/:id', async (req, res) => {
 });
 
 // hike update route
-app.put('/hike/:id', async (req, res) => {
+app.put('/hike/:id', auth, async (req, res) => {
     try {
         res.json(
             await Hike.findByIdAndUpdate(req.params.id, req.body, { new: true })
@@ -196,7 +195,7 @@ app.put('/hike/:id', async (req, res) => {
 });
 
 // scenic update route
-app.put('/scenic/:id', async (req, res) => {
+app.put('/scenic/:id', auth, async (req, res) => {
     try {
         res.json(
             await Scenic.findByIdAndUpdate(req.params.id, req.body, {
@@ -209,7 +208,7 @@ app.put('/scenic/:id', async (req, res) => {
 });
 
 // delete
-app.delete('/run/:id', async (req, res) => {
+app.delete('/run/:id', auth, async (req, res) => {
     try {
         res.json(await Run.findByIdAndRemove(req.params.id, req.body));
     } catch (error) {
@@ -218,7 +217,8 @@ app.delete('/run/:id', async (req, res) => {
 });
 
 // delete
-app.delete('/hike/:id', async (req, res) => {
+app.delete('/hike/:id', auth, async (req, res) => {
+    console.log('username: ', req.payload.username);
     try {
         res.json(await Hike.findByIdAndRemove(req.params.id, req.body));
     } catch (error) {
@@ -227,7 +227,7 @@ app.delete('/hike/:id', async (req, res) => {
 });
 
 // delete
-app.delete('/scenic/:id', async (req, res) => {
+app.delete('/scenic/:id', auth, async (req, res) => {
     try {
         res.json(await Scenic.findByIdAndRemove(req.params.id, req.body));
     } catch (error) {
