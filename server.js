@@ -136,7 +136,6 @@ app.get('/run', auth, async (req, res) => {
         '-password'
     );
     // await findOne.execPopulate(`cart.${type}`); for more than just _ids
-    // console.log(user.cart[type]);
     try {
         res.json({
             all_runs: allRuns,
@@ -148,20 +147,36 @@ app.get('/run', auth, async (req, res) => {
 });
 
 app.get('/hike', auth, async (req, res) => {
-    console.log(req._parsedUrl._raw);
-
+    const allHikes = await Hike.find({});
+    const type = `${req._parsedUrl._raw.split('/')[1]}s`;
+    const user = await await User.findOne(
+        { username: req.payload.username },
+        '-password'
+    );
+    // await findOne.execPopulate(`cart.${type}`); for more than just _ids
     try {
-        res.json(await Hike.find({}));
+        res.json({
+            all_hikes: allHikes,
+            user_created: user.cart[type],
+        });
     } catch (error) {
         res.status(400).json(error);
     }
 });
 
 app.get('/scenic', auth, async (req, res) => {
-    console.log(req._parsedUrl._raw);
-
+    const allWalks = await Scenic.find({});
+    const type = `${req._parsedUrl._raw.split('/')[1]}s`;
+    const user = await await User.findOne(
+        { username: req.payload.username },
+        '-password'
+    );
+    // await findOne.execPopulate(`cart.${type}`); for more than just _ids
     try {
-        res.json(await Scenic.find({}));
+        res.json({
+            all_walks: allWalks,
+            user_created: user.cart[type],
+        });
     } catch (error) {
         res.status(400).json(error);
     }
