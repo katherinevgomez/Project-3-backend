@@ -77,7 +77,6 @@ const Scenic = mongoose.model('Scenic', ScenicSchema);
 
 //////////////////////////////////////////////////////////////////////////
 const associateWithUser = async (body) => {
-    // console.log(body);
     let modelToAssociate = null;
     let itemToAssociate = null;
     const setAssociation = async (model) => {
@@ -94,39 +93,11 @@ const associateWithUser = async (body) => {
     if (body.type === 'scenics') {
         await setAssociation(Scenic);
     }
-    // console.log('model: ', modelToAssociate);
-    // console.log('item: ', itemToAssociate);
 
     const user = await User.findOne({ username: body.username }, '-password');
-    // console.log('user: ', user);
     user.cart[`${body.type}`].push(itemToAssociate);
     user.save();
 };
-
-/* const removeDeleted = async (inputList, modelString) => {
-    let model = null;
-    if (modelString === 'runs') {
-        model = Run;
-    }
-    if (modelString === 'hikes') {
-        model = Hike;
-    }
-    if (modelString === 'scenic') {
-        model = Scenic;
-    }
-
-    let outputList = [];
-
-    for (let i = 0; i < inputList.length; i++) {
-        const item = await model.findById(inputList[i]);
-        if (item !== null) {
-            outputList.push(inputList[i]);
-        } else {
-            inputList = inputList.filter((e) => e !== inputList[i]);
-        }
-    }
-    return outputList;
-}; */
 
 app.get('/run', auth, async (req, res) => {
     const allRuns = await Run.find({});
