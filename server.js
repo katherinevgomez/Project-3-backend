@@ -103,15 +103,53 @@ const associateWithUser = async (body) => {
     user.save();
 };
 
-app.get('/run', async (req, res) => {
+/* const removeDeleted = async (inputList, modelString) => {
+    let model = null;
+    if (modelString === 'runs') {
+        model = Run;
+    }
+    if (modelString === 'hikes') {
+        model = Hike;
+    }
+    if (modelString === 'scenic') {
+        model = Scenic;
+    }
+
+    let outputList = [];
+
+    for (let i = 0; i < inputList.length; i++) {
+        const item = await model.findById(inputList[i]);
+        if (item !== null) {
+            outputList.push(inputList[i]);
+        } else {
+            inputList = inputList.filter((e) => e !== inputList[i]);
+        }
+    }
+    return outputList;
+}; */
+
+app.get('/run', auth, async (req, res) => {
+    const allRuns = await Run.find({});
+    const type = `${req._parsedUrl._raw.split('/')[1]}s`;
+    const user = await await User.findOne(
+        { username: req.payload.username },
+        '-password'
+    );
+    // await findOne.execPopulate(`cart.${type}`); for more than just _ids
+    // console.log(user.cart[type]);
     try {
-        res.json(await Run.find({}));
+        res.json({
+            all_runs: allRuns,
+            user_created: user.cart[type],
+        });
     } catch (error) {
         res.status(400).json(error);
     }
 });
 
-app.get('/hike', async (req, res) => {
+app.get('/hike', auth, async (req, res) => {
+    console.log(req._parsedUrl._raw);
+
     try {
         res.json(await Hike.find({}));
     } catch (error) {
@@ -119,7 +157,9 @@ app.get('/hike', async (req, res) => {
     }
 });
 
-app.get('/scenic', async (req, res) => {
+app.get('/scenic', auth, async (req, res) => {
+    console.log(req._parsedUrl._raw);
+
     try {
         res.json(await Scenic.find({}));
     } catch (error) {

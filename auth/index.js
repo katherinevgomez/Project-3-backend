@@ -12,18 +12,17 @@ const auth = async (req, res, next) => {
                 req.payload = payload;
                 next();
             } else {
-                console.log('error');
+                console.log('VERIFICATION FAILED OR NO PAYLOAD');
                 res.status(400).json({
                     error: 'VERIFICATION FAILED OR NO PAYLOAD',
                 });
             }
         } else {
-            console.log('othererror');
+            console.log('NO AUTHORIZATION HEADER');
             res.status(400).json({ error: 'NO AUTHORIZATION HEADER' });
         }
     } catch (error) {
-        // console.log(error);
-
+        console.log(error);
         res.status(400).json({ error });
     }
 };
