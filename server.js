@@ -77,10 +77,8 @@ const Scenic = mongoose.model('Scenic', ScenicSchema);
 
 //////////////////////////////////////////////////////////////////////////
 const associateWithUser = async (body) => {
-    let modelToAssociate = null;
     let itemToAssociate = null;
     const setAssociation = async (model) => {
-        modelToAssociate = model;
         itemToAssociate = await model.findById(body.id);
     };
 
@@ -111,6 +109,7 @@ app.get('/run', auth, async (req, res) => {
         res.json({
             all_runs: allRuns,
             user_created: user.cart[type],
+            username: user.username,
         });
     } catch (error) {
         res.status(400).json(error);
@@ -129,6 +128,7 @@ app.get('/hike', auth, async (req, res) => {
         res.json({
             all_hikes: allHikes,
             user_created: user.cart[type],
+            username: user.username,
         });
     } catch (error) {
         res.status(400).json(error);
@@ -147,6 +147,7 @@ app.get('/scenic', auth, async (req, res) => {
         res.json({
             all_walks: allWalks,
             user_created: user.cart[type],
+            username: user.username,
         });
     } catch (error) {
         res.status(400).json(error);
@@ -159,7 +160,7 @@ app.post('/run', auth, async (req, res) => {
         const newRun = await Run.create(req.body);
         await associateWithUser({
             id: newRun._id,
-            type: req.body.type,
+            type: `${req._parsedUrl._raw.split('/')[1]}s`,
             username: req.payload.username,
         });
         res.json(newRun);
@@ -174,7 +175,7 @@ app.post('/hike', auth, async (req, res) => {
         const newHike = await Hike.create(req.body);
         await associateWithUser({
             id: newHike._id,
-            type: req.body.type,
+            type: `${req._parsedUrl._raw.split('/')[1]}s`,
             username: req.payload.username,
         });
         res.json(newHike);
@@ -189,7 +190,7 @@ app.post('/scenic', auth, async (req, res) => {
         const newScenic = await Scenic.create(req.body);
         await associateWithUser({
             id: newScenic._id,
-            type: req.body.type,
+            type: `${req._parsedUrl._raw.split('/')[1]}s`,
             username: req.payload.username,
         });
         res.json(newScenic);
@@ -244,7 +245,6 @@ app.delete('/run/:id', auth, async (req, res) => {
 
 // delete
 app.delete('/hike/:id', auth, async (req, res) => {
-    console.log('username: ', req.payload.username);
     try {
         res.json(await Hike.findByIdAndRemove(req.params.id, req.body));
     } catch (error) {
