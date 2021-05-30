@@ -77,10 +77,8 @@ const Scenic = mongoose.model('Scenic', ScenicSchema);
 
 //////////////////////////////////////////////////////////////////////////
 const associateWithUser = async (body) => {
-    let modelToAssociate = null;
     let itemToAssociate = null;
     const setAssociation = async (model) => {
-        modelToAssociate = model;
         itemToAssociate = await model.findById(body.id);
     };
 
@@ -111,6 +109,7 @@ app.get('/run', auth, async (req, res) => {
         res.json({
             all_runs: allRuns,
             user_created: user.cart[type],
+            username: user.name,
         });
     } catch (error) {
         res.status(400).json(error);
@@ -129,6 +128,7 @@ app.get('/hike', auth, async (req, res) => {
         res.json({
             all_hikes: allHikes,
             user_created: user.cart[type],
+            username: user.name,
         });
     } catch (error) {
         res.status(400).json(error);
@@ -147,6 +147,7 @@ app.get('/scenic', auth, async (req, res) => {
         res.json({
             all_walks: allWalks,
             user_created: user.cart[type],
+            username: user.name,
         });
     } catch (error) {
         res.status(400).json(error);
